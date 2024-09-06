@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Layout Example
+  </title>
+  <link href="header.css" rel="stylesheet"/>
+  <link href="Browse.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/tiff.js@latest">
+  </script>
+ </head>
+ <body>
+  <header>
+   <!--  <img src="background.jpg" alt="背景图片" class="bgimage1">-->
+   <nav>
+    <ul>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="Browse.html">
+       Browse
+      </a>
+     </li>
+     <!--      <li><a href="Submit.html">Submit</a></li>-->
+     <li>
+      <a href="help.html">
+       Help
+      </a>
+     </li>
+     <li>
+      <a href="contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
+<!--   <input id="searchInput" placeholder="Search..." style="width: 150px;" type="text"/>-->
+<!--   <button id="searchButton" onclick="searchSpecies()">-->
+<!--    Search-->
+<!--   </button>-->
+  </header>
+  <!-- 浏览数据部分 -->
+  <div id="browse">
+  <div class="sidebar">
+    <div class="search-container"> <!-- 新增的 div 容器 -->
+      <p>EigenTree</p>
+      <input id="searchInput" placeholder="Search..." type="text"/>
+      <button id="searchButton" onclick="searchSpecies()">Search</button>
+    </div>
+   <ul id="speciesList">
+    <li onclick="toggleOptions('3750')">
+     <span>
+      +
+     </span>
+     Apple_Malus pumila_3750
+    </li>
+    <ul id="3750" style="display: none;">
+     <li id="Apple_3750_33139952_pmid_33139952">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Apple_NG_2020.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33139952/" target="_blank">
+         PubMed 33139952
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Apple_3750_34022440_pmid_34022440">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Apple_GVM000128.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34022440/" target="_blank">
+         PubMed 34022440
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('89462')">
+     <span>
+      +
+     </span>
+     Buffalo_Bubalus bubalis_89462
+    </li>
+    <ul id="89462" style="display: none;">
+     <li id="Buffalo_89462_34692087_pmid_34692087">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34692087/" target="_blank">
+         PubMed 34692087
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Buffalo_89462_34692087_pmid_34692087">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34692087/" target="_blank">
+         PubMed 34692087
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Buffalo_89462_34616425_pmid_34616425">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Buffalo_PRJEB47270.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34616425/" target="_blank">
+         PubMed 34616425
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9913')">
+     <span>
+      +
+     </span>
+     Cattle_Bos taurus_9913
+    </li>
+    <ul id="9913" style="display: none;">
+     <li id="Cattle_9913_30479382_pmid_30479382">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Cattle_GVM.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30479382/" target="_blank">
+         PubMed 30479382
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Cattle_9913_32000679_pmid_32000679">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Cattle_PRJEB24746.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32000679/" target="_blank">
+         PubMed 32000679
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Cattle_9913_31708963_pmid_31708963">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Cattle_PRJEB32975.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31708963/" target="_blank">
+         PubMed 31708963
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Cattle_9913_32591360_pmid_32591360">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Cattle_PRJEB38336.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32591360/" target="_blank">
+         PubMed 32591360
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Cattle_9913_33763120_pmid_33763120">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33763120/" target="_blank">
+         PubMed 33763120
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Cattle_9913_29149296_pmid_29149296">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Cattle_NAR_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29149296/" target="_blank">
+         PubMed 29149296
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9031')">
+     <span>
+      +
+     </span>
+     Chicken_Gallus gallus domesticus_9031
+    </li>
+    <ul id="9031" style="display: none;">
+     <li id="Chicken_9031_32849779_pmid_32849779">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Chicken_PRJEB39468.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32849779/" target="_blank">
+         PubMed 32849779
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Chicken_9031_34408769_pmid_34408769">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Chicken_PRJEB46210.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34408769/" target="_blank">
+         PubMed 34408769
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3885')">
+     <span>
+      +
+     </span>
+     Common bean_Phaseolus vulgaris	_3885
+    </li>
+    <ul id="3885" style="display: none;">
+     <li id="Common bean_3885_33188249_pmid_33188249">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Common_bean_PRJEB33063.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33188249/" target="_blank">
+         PubMed 33188249
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3635')">
+     <span>
+      +
+     </span>
+     Cotton_Gossypium hirsutum_3635
+    </li>
+    <ul id="3635" style="display: none;">
+     <li id="Cotton_3635_33892774_pmid_33892774">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Cotton_GB_2021.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33892774/" target="_blank">
+         PubMed 33892774
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Cotton_3635_28219438_pmid_28219438">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28219438/" target="_blank">
+         PubMed 28219438
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9615')">
+     <span>
+      +
+     </span>
+     Dog_Canis lupus familiaris_9615
+    </li>
+    <ul id="9615" style="display: none;">
+     <li id="Dog_9615_31486122_pmid_31486122">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Dog_PRJEB24066.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31486122/" target="_blank">
+         PubMed 31486122
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Dog_9615_31486122_pmid_31486122">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Dog_PRJEB32865.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31486122/" target="_blank">
+         PubMed 31486122
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Dog_9615_33763109_pmid_33763109">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Dog_PRJEB43243.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33763109/" target="_blank">
+         PubMed 33763109
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Dog_9615_30940804_pmid_30940804">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Dog_NAR_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30940804/" target="_blank">
+         PubMed 30940804
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9925')">
+     <span>
+      +
+     </span>
+     Goat_Capra hircus_9925
+    </li>
+    <ul id="9925" style="display: none;">
+     <li id="Goat_9925_27329507_pmid_27329507">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Goat_GVM.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27329507/" target="_blank">
+         PubMed 27329507
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Goat_9925_25904931_pmid_25904931">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Goat_PRJEB6057.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25904931/" target="_blank">
+         PubMed 25904931
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Goat_9925_27598391_pmid_27598391">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Goat_NAR_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27598391/" target="_blank">
+         PubMed 27598391
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('7957')">
+     <span>
+      +
+     </span>
+     Goldfish_Carassius auratus_7957
+    </li>
+    <ul id="7957" style="display: none;">
+     <li id="Goldfish_7957_33139555_pmid_33139555">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Goldfish_PNAS_2020.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33139555/" target="_blank">
+         PubMed 33139555
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9157')">
+     <span>
+      +
+     </span>
+     Great tit_Parus major_9157
+    </li>
+    <ul id="9157" style="display: none;">
+     <li id="Great tit_9157_29051380_pmid_29051380">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29051380/" target="_blank">
+         PubMed 29051380
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9796')">
+     <span>
+      +
+     </span>
+     Horse_Equus caballus_9796
+    </li>
+    <ul id="9796" style="display: none;">
+     <li id="Horse_9796_30071827_pmid_30071827">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Horse_PRJEB23301.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30071827/" target="_blank">
+         PubMed 30071827
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Horse_9796_31339891_pmid_31339891">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31339891/" target="_blank">
+         PubMed 31339891
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('48849')">
+     <span>
+      +
+     </span>
+     House sparrow_Passer domesticus_48849
+    </li>
+    <ul id="48849" style="display: none;">
+     <li id="House sparrow_48849_30040161_pmid_30040161">
+      <ul>
+       <li onclick="showSpeciesFile(event,'House_sparrow_ME_2018.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30040161/" target="_blank">
+         PubMed 30040161
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('102107')">
+     <span>
+      +
+     </span>
+     Japanese apricot_Prunus mume_102107
+    </li>
+    <ul id="102107" style="display: none;">
+     <li id="Japanese apricot_102107_29703940_pmid_29703940">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Japanese_Apricot_GVM.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29703940/" target="_blank">
+         PubMed 29703940
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('215358')">
+     <span>
+      +
+     </span>
+     Large yellow croaker_Larimichthys crocea_215358
+    </li>
+    <ul id="215358" style="display: none;">
+     <li id="Large yellow croaker_215358_29860175_pmid_29860175">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Large_yellow_croaker_PRJEB22261.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29860175/" target="_blank">
+         PubMed 29860175
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4236')">
+     <span>
+      +
+     </span>
+     Lettuce_Lactuca sativa var. ramosa Hort._4236
+    </li>
+    <ul id="4236" style="display: none;">
+     <li id="Lettuce_4236_33629537_pmid_33629537">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Lettuce_PRJEB40369.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33629537/" target="_blank">
+         PubMed 33629537
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4577')">
+     <span>
+      +
+     </span>
+     Maize_Zea mays Linn._4577
+    </li>
+    <ul id="4577" style="display: none;">
+     <li id="Maize_4577_32631406_pmid_32631406">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32631406/" target="_blank">
+         PubMed 32631406
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Maize_4577_30548709_pmid_30548709">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Maize_PRJEB24974.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30548709/" target="_blank">
+         PubMed 30548709
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Maize_4577_33060172_pmid_33060172">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Maize_PRJEB40124.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33060172/" target="_blank">
+         PubMed 33060172
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Maize_4577_29300887_pmid_29300887">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Maize_GS_2018.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29300887/" target="_blank">
+         PubMed 29300887
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Maize_4577_31287919_pmid_31287919">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Maize_ME_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31287919/" target="_blank">
+         PubMed 31287919
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Maize_4577_nan_pmid_nan">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/nan/" target="_blank">
+         PubMed nan
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3760')">
+     <span>
+      +
+     </span>
+     Peach_Amygdalus persica L._3760
+    </li>
+    <ul id="3760" style="display: none;">
+     <li id="Peach_3760_33687945_pmid_33687945">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33687945/" target="_blank">
+         PubMed 33687945
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Peach_3760_30791928_pmid_30791928">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30791928/" target="_blank">
+         PubMed 30791928
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('23211')">
+     <span>
+      +
+     </span>
+     Pear_Pyrus communis L._23211
+    </li>
+    <ul id="23211" style="display: none;">
+     <li id="Pear_23211_33602909_pmid_33602909">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Pear_NC_2021.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33602909/" target="_blank">
+         PubMed 33602909
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4615')">
+     <span>
+      +
+     </span>
+     Pineapple_Ananas comosus (Linn.) Merr._4615
+    </li>
+    <ul id="4615" style="display: none;">
+     <li id="Pineapple_4615_31570895_pmid_31570895">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Pineapple_NG_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31570895/" target="_blank">
+         PubMed 31570895
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('9823')">
+     <span>
+      +
+     </span>
+     Pig_Sus scrofa_9823
+    </li>
+    <ul id="9823" style="display: none;">
+     <li id="Pig_9823_23151514_pmid_23151514">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Pig_GVM.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/23151514/" target="_blank">
+         PubMed 23151514
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Pig_9823_27808243_pmid_27808243">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Pig_NAR_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27808243/" target="_blank">
+         PubMed 27808243
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('5833')">
+     <span>
+      +
+     </span>
+     Plasmodium falciparum_Plasmodium falciparum_5833
+    </li>
+    <ul id="5833" style="display: none;">
+     <li id="Plasmodium falciparum_5833_31737048_pmid_31737048">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Plasmodium_falciparum_PRJEB34415.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31737048/" target="_blank">
+         PubMed 31737048
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3689')">
+     <span>
+      +
+     </span>
+     Poplar_Populus L._3689
+    </li>
+    <ul id="3689" style="display: none;">
+     <li id="Poplar_3689_26964097_pmid_26964097">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Poplar_GVM.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26964097/" target="_blank">
+         PubMed 26964097
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Poplar_3689_26880192_pmid_26880192">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Poplar_ME_2016.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26880192/" target="_blank">
+         PubMed 26880192
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('83906')">
+     <span>
+      +
+     </span>
+     Ramie_Boehmeria nivea (L.) Gaudich._83906
+    </li>
+    <ul id="83906" style="display: none;">
+     <li id="Ramie_83906_34558775_pmid_34558775">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Ramie_GVM000103.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34558775/" target="_blank">
+         PubMed 34558775
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3708')">
+     <span>
+      +
+     </span>
+     Rapeseed_Brassica napus L._3708
+    </li>
+    <ul id="3708" style="display: none;">
+     <li id="Rapeseed_3708_26027461_pmid_26027461">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26027461/" target="_blank">
+         PubMed 26027461
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Rapeseed_3708_nan_pmid_nan">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/nan/" target="_blank">
+         PubMed nan
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('34506')">
+     <span>
+      +
+     </span>
+     Rat threadworm_Strongyloides ratti_34506
+    </li>
+    <ul id="34506" style="display: none;">
+     <li id="Rat threadworm_34506_35664995_pmid_35664995">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Rat_threadworm_PRJEB32744.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35664995/" target="_blank">
+         PubMed 35664995
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4530')">
+     <span>
+      +
+     </span>
+     Rice_Oryza sativa L._4530
+    </li>
+    <ul id="4530" style="display: none;">
+     <li id="Rice_4530_25923345_pmid_25923345">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Rice_PRJEB10964.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25923345/" target="_blank">
+         PubMed 25923345
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Rice_4530_24872877_pmid_24872877">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Rice_PRJEB13618.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24872877/" target="_blank">
+         PubMed 24872877
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Rice_4530_30158584_pmid_30158584">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Rice_PRJEB26328.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30158584/" target="_blank">
+         PubMed 30158584
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Rice_4530_25429973_pmid_25429973">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Rice_NAR_2020.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/25429973/" target="_blank">
+         PubMed 25429973
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Rice_4530_29695866_pmid_29695866">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Rice_3K_Core.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29695866/" target="_blank">
+         PubMed 29695866
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4932')">
+     <span>
+      +
+     </span>
+     Saccharomyces cerevisiae_Saccharomyces cerevisiae_4932
+    </li>
+    <ul id="4932" style="display: none;">
+     <li id="Saccharomyces cerevisiae_4932_29643504_pmid_29643504">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29643504/" target="_blank">
+         PubMed 29643504
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Saccharomyces cerevisiae_4932_29474395_pmid_29474395">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29474395/" target="_blank">
+         PubMed 29474395
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3847')">
+     <span>
+      +
+     </span>
+     Soybean_Glycine max (Linn.) Merr._3847
+    </li>
+    <ul id="3847" style="display: none;">
+     <li id="Soybean_3847_32553274_pmid_32553274">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32553274/" target="_blank">
+         PubMed 32553274
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Soybean_3847_24733883_pmid_24733883">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Soybean_GVM.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24733883/" target="_blank">
+         PubMed 24733883
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Soybean_3847_33199922_pmid_33199922">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Soybean_GVM000076.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33199922/" target="_blank">
+         PubMed 33199922
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Soybean_3847_31803203_pmid_31803203">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Soybean_PRJEB34546.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31803203/" target="_blank">
+         PubMed 31803203
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4442')">
+     <span>
+      +
+     </span>
+     Tea_Camellia sinensis (L.)O.Kuntze_4442
+    </li>
+    <ul id="4442" style="display: none;">
+     <li id="Tea_4442_34267370_pmid_34267370">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Tea_NG_2021.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/34267370/" target="_blank">
+         PubMed 34267370
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('3702')">
+     <span>
+      +
+     </span>
+     Thale cress_Arabidopsis thaliana (L.) Heynh._3702
+    </li>
+    <ul id="3702" style="display: none;">
+     <li id="Thale cress_3702_28122950_pmid_28122950">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Thale_cress_G3_2017.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28122950/" target="_blank">
+         PubMed 28122950
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4513')">
+     <span>
+      +
+     </span>
+     Tibetan barley_Hordeum vulgare_4513
+    </li>
+    <ul id="4513" style="display: none;">
+     <li id="Tibetan barley_4513_30575759_pmid_30575759">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Tibetan_Barley_NC_2018.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/30575759/" target="_blank">
+         PubMed 30575759
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('8126')">
+     <span>
+      +
+     </span>
+     Tilapia_Oreochromis mossambicus (Peters, 1852)_8126
+    </li>
+    <ul id="8126" style="display: none;">
+     <li id="Tilapia_8126_32661317_pmid_32661317">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Tilapia_PRJEB38764.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32661317/" target="_blank">
+         PubMed 32661317
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('nan')">
+     <span>
+      +
+     </span>
+     Tomato_nan_nan
+    </li>
+    <ul id="nan" style="display: none;">
+     <li id="Tomato_nan_24228636_pmid_24228636">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/24228636/" target="_blank">
+         PubMed 24228636
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('60711')">
+     <span>
+      +
+     </span>
+     Vervet monkey_Chlorocebus sabaeus_60711
+    </li>
+    <ul id="60711" style="display: none;">
+     <li id="Vervet monkey_60711_26092298_pmid_26092298">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26092298/" target="_blank">
+         PubMed 26092298
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Vervet monkey_60711_nan_pmid_nan">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/nan/" target="_blank">
+         PubMed nan
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Vervet monkey_60711_29083404_pmid_29083404">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/29083404/" target="_blank">
+         PubMed 29083404
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('260674')">
+     <span>
+      +
+     </span>
+     Watermelon_Citrullus lanatus (Thunb.) Matsum. et Nakai_260674
+    </li>
+    <ul id="260674" style="display: none;">
+     <li id="Watermelon_260674_31676863_pmid_31676863">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Watermelon_NAR_2020.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31676863/" target="_blank">
+         PubMed 31676863
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('4565')">
+     <span>
+      +
+     </span>
+     Wheat_Triticum aestivum L._4565
+    </li>
+    <ul id="4565" style="display: none;">
+     <li id="Wheat_4565_31197271_pmid_31197271">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Wheat_NAR_2020.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31197271/" target="_blank">
+         PubMed 31197271
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Wheat_4565_33106631_pmid_33106631">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33106631/" target="_blank">
+         PubMed 33106631
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li id="Wheat_4565_31043759_pmid_31043759">
+      <ul>
+       <li onclick="showSpeciesFile(event,'nan.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31043759/" target="_blank">
+         PubMed 31043759
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <li onclick="toggleOptions('569628')">
+     <span>
+      +
+     </span>
+     Yam_Dioscorea oppositifolia L._569628
+    </li>
+    <ul id="569628" style="display: none;">
+     <li id="Yam_569628_31114806_pmid_31114806">
+      <ul>
+       <li onclick="showSpeciesFile(event,'Yam_SA_2019.EgRes.html')">
+        EigenGWAS Report
+       </li>
+       <li>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31114806/" target="_blank">
+         PubMed 31114806
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </ul>
+  </div>
+  <div class="content" id="content">
+   <!-- 主内容区域 -->
+   <h2>
+    主内容区域
+   </h2>
+  </div>
+  <div class="clearfix">
+  </div>
+  </div>
+  <script>
+   function showOptions(id) {
+    var options = document.getElementById(id);
+    if (options.style.display === "none") {
+      options.style.display = "block";
+    } else {
+      options.style.display = "none";
+    }
+  }
+
+
+
+  function showSpeciesFile(event, filePath) {
+    setActive(event);
+    var content = document.getElementById("content");
+
+    // 设置内容区域透明度过渡效果
+    content.style.transition = "opacity 0.5s ease"; // 添加过渡效果
+
+    // 首先将内容区域透明度设置为0
+    content.style.opacity = 0;
+
+    // 创建一个iframe来显示HTML文件
+    var iframe = document.createElement('iframe');
+    iframe.src = 'EigenGWAS_Results/' + filePath; // 使用传入的文件路径
+    iframe.style.width = '100%';
+    iframe.style.height = '850px'; // 设置合适的高度
+    iframe.style.border = 'none'; // 可以根据需要设置边框样式
+
+    // 获取主内容区域并清空其内容
+    content.innerHTML = '';
+
+    // 将iframe添加到主内容区域
+    content.appendChild(iframe);
+
+    // 文件加载完成后将内容区域透明度设置为1，触发过渡效果
+    iframe.onload = function() {
+      content.style.opacity = 1;
+    };
+  }
+
+  function setActive(event) {
+    // 阻止链接的默认行为
+    event.preventDefault();
+
+    // 移除所有列表项的 active 类
+    var items = document.querySelectorAll('#speciesList ul li');
+    items.forEach(function(item) {
+      item.classList.remove('active');
+    });
+
+    // 为点击的列表项添加 active 类
+    var clickedItem = event.target.closest('li');
+    clickedItem.classList.add('active');
+  }
+  function searchSpecies() {
+    var searchInput = document.getElementById("searchInput").value;
+    var speciesList = document.getElementById("speciesList").getElementsByTagName("li");
+    for (var i = 0; i < speciesList.length; i++) {
+      if (speciesList[i].innerText.includes(searchInput)) {
+        // 如果是目标 li 元素，则点击它
+        speciesList[i].click();
+        // 获取包含搜索结果的 li 元素的父级 ul 元素
+        var ulElement = speciesList[i].parentElement;
+        if (ulElement && ulElement.tagName === "UL") {
+          // 如果父级 ul 元素是存在的，则点击它
+          ulElement.previousElementSibling.click();
+        }
+        return;
+      }
+    }
+    alert("Species not found.");
+  }
+
+  function toggleForm() {
+    var formContainer = document.getElementById("formContainer");
+    formContainer.classList.toggle("show");
+  }
+
+
+  // window.onload = function() {
+  //   restoreSpeciesList();
+  // };
+  // function uploadFile() {
+  //   var form = document.getElementById('uploadForm');
+  //   var formData = new FormData(form);
+  //
+  //   // 使用 fetch 发送 POST 请求到 /upload 路由
+  //   fetch('/upload', {
+  //     method: 'POST',
+  //     body: formData
+  //   })
+  //     .then(response => {
+  //       if (response.ok) {
+  //         // 如果响应正常，继续处理
+  //         return response.text();
+  //       } else {
+  //         // 如果响应不是 2xx 状态码，抛出错误
+  //         throw new Error('File upload failed.');
+  //       }
+  //     })
+  //     .then(result => {
+  //       console.log(result);
+  //       alert('File uploaded successfully');
+  //
+  //       // 将 Species Name、Species Class、Species id 和上传的文件保存到本地存储
+  //       var speciesName = form.elements['speciesName'].value;
+  //       var speciesClass = form.elements['speciesClass'].value;
+  //       var speciesId = form.elements['speciesId'].value;
+  //       var fileName = form.elements['file'].files[0].name;
+  //
+  //       // 创建新的物种对象
+  //       var newSpecies = {
+  //         name: speciesName,
+  //         class: speciesClass,
+  //         id: speciesId,
+  //         fileName: fileName
+  //       };
+  //
+  //       // 从本地存储中获取 speciesList，如果没有则初始化为空数组
+  //       var speciesList = JSON.parse(localStorage.getItem('speciesList')) || [];
+  //
+  //       // 添加新物种到 speciesList 中
+  //       speciesList.push(newSpecies);
+  //
+  //       // 更新 localStorage
+  //       localStorage.setItem('speciesList', JSON.stringify(speciesList));
+  //
+  //       // 重新加载页面以显示新添加的物种
+  //       location.reload();
+  //     })
+  //     .catch(error => {
+  //       console.error('Error:', error);
+  //       alert('Error occurred while uploading file');
+  //     });
+  // }
+
+
+
+
+  // // 从本地存储中恢复物种列表并在页面中显示
+  // function restoreSpeciesList() {
+  //   var speciesList = JSON.parse(localStorage.getItem('speciesList'));
+  //   if (speciesList) {
+  //     var ul = document.getElementById('speciesList');
+  //     speciesList.forEach(function(species) {
+  //       var li = document.createElement('li');
+  //       li.textContent = species.name;
+  //       li.onclick = function() {
+  //         showOptions(species.id);
+  //       };
+  //
+  //       var subUl = document.createElement('ul');
+  //       subUl.id = species.id;
+  //       subUl.style.display = 'none';
+  //
+  //       var subLi = document.createElement('li');
+  //       subLi.textContent = species.class;
+  //       subLi.onclick = function() {
+  //         showSpeciesFile(species.fileName);
+  //       };
+  //
+  //       subUl.appendChild(subLi);
+  //       ul.appendChild(li);
+  //       ul.appendChild(subUl);
+  //     });
+  //   }
+  // }
+
+  function toggleOptions(id) {
+    var ul = document.getElementById(id);
+    var span = ul.previousElementSibling.querySelector('span'); // 获取上一个兄弟元素的span标签
+
+    // 定义CSS过渡效果
+    ul.style.transition = "opacity 0.5s ease";
+
+    if (ul.style.display === "none" || ul.style.display === "") {
+      // 如果元素是隐藏的，先设置透明度为0，然后显示元素
+      ul.style.opacity = 0;
+      ul.style.display = "block"; // 先设置display为block，但不立即可见
+
+      // 更新span元素的文本内容为"-"
+      span.textContent = '-';
+
+      // 使用setTimeout来设置透明度为1，触发过渡效果
+      setTimeout(function() {
+        ul.style.opacity = 1; // 过渡效果完成后，设置透明度为1
+      }, 10); // 10毫秒的延迟，确保display属性已经应用
+    } else {
+      // 如果元素是可见的，设置透明度为0，然后隐藏元素
+      ul.style.opacity = 0;
+
+      // 更新span元素的文本内容为"+"
+      span.textContent = '+';
+
+      // 等待过渡效果完成后隐藏元素
+      setTimeout(function() {
+        ul.style.display = "none"; // 过渡效果完成后，隐藏元素
+      }, 500); // 0.5秒的过渡时间
+    }
+  }
+
+
+  function clearSpeciesList() {
+    // 使用 localStorage.removeItem() 方法删除 speciesList 项
+    localStorage.removeItem('speciesList');
+    // 提示用户列表已清除
+    alert('Species list has been cleared.');
+  }
+  // 绑定按钮的点击事件
+  document.getElementById('clearButton').addEventListener('click', clearSpeciesList);
+  </script>
+ </body>
+</html>

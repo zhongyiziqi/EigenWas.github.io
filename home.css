@@ -1,0 +1,89 @@
+/* 主要内容区域样式 */
+main {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 介绍部分的容器样式 */
+#introduction {
+  max-width: 1200px;
+  margin: 50px auto; /* 增加上边距 */
+  padding: 30px; /* 增加内边距 */
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* 清除浮动 */
+  display: flex; /* 使用Flexbox布局 */
+  flex-direction: column; /* 设置主轴方向为垂直 */
+  align-items: center; /* 水平居中子元素 */
+  justify-content: center; /* 垂直居中子元素，如果需要 */
+}
+
+/* 优化标题和段落样式 */
+#introduction h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px; /* 增加间隔 */
+  text-align: center; /* 标题居中 */
+}
+
+#introduction p {
+  color: #666;
+  line-height: 1.8; /* 增加行高 */
+  font-size: 1em;
+  margin-bottom: 20px; /* 增加段落之间的间隔 */
+  text-align: justify; /* 文本两端对齐 */
+}
+
+/* 优化无序列表样式 */
+#introduction ul {
+  list-style-type: none; /* 移除项目符号 */
+  padding: 0;
+  margin: 20px 0;
+}
+
+#introduction li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #e9ecef; /* 项目背景色 */
+  border-left: 5px solid #007bff; /* 项目左侧边框颜色 */
+}
+
+/* 按钮样式优化 */
+#introduction .btn {
+  display: inline-block;
+  margin: 30px auto 0; /* 按钮居中 */
+  padding: 12px 40px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s; /* 增加变换过渡 */
+  cursor: pointer; /* 鼠标指针变化 */
+
+}
+
+#introduction .btn:hover,
+#introduction .btn:focus {
+  background-color: #0056b3;
+  transform: scale(1.05); /* 轻微放大 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  #introduction {
+    padding: 20px;
+  }
+
+  #introduction h1 {
+    font-size: 2em;
+  }
+
+  #introduction p,
+  #introduction ul {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
