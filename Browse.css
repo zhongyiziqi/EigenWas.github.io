@@ -1,8 +1,8 @@
  /* 搜索输入框样式 */
 #searchInput {
   padding: 8px 10px; /* 根据需要调整内边距 */
-  margin-left: 10px; /* 与按钮保持一定间隔 */
-  width: 115px;
+  margin-left: 0px; /* 与按钮保持一定间隔 */
+  width: 300px;
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 14px;
@@ -85,8 +85,8 @@
 #speciesList li {
   font-size: 17px;
   cursor: pointer;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-bottom: 3px;
+  padding: 4px;
   background-color: #f5f5f5;
   transition: background-color 0.3s ease;
   overflow: hidden; /* 隐藏溢出文本 */
@@ -107,12 +107,12 @@
 
 #speciesList ul {
   padding-left: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
 }
 
 #speciesList ul li {
   padding-left: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 #speciesList ul li.active {
